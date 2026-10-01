@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 390px;
+  margin: 18px auto;
+
+  display: grid;
+
+  grid-template-columns: 155px 115px 120px;
+
+  grid-template-rows:
+    40px
+    130px
+    100px
+    70px
+    60px
+    40px;
+
+  gap: 3px;
+
+  grid-template-areas:
+    "header header header"
+    "hero main main"
+    "sidebar main main"
+    "sidebar extra extra"
+    "images images posts"
+    "footer footer footer";
+}
+
+
+
+
+.header {
+  grid-area: header;
+
+  background-color: #54d5eb;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+}
+
+
+.hero {
+  grid-area: hero;
+
+  background-color: #cbbbe0;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+}
+
+
+
+.main-content {
+  grid-area: main;
+
+  background-color: #ffca28;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 10px;
+}
+
+.main-content h1 {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: normal;
+}
+
+
+
+.sidebar {
+  grid-area: sidebar;
+
+  background-color: #a8c65c;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+}
+
+
+
+.extra-content {
+  grid-area: extra;
+
+  background-color: #999999;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+}
+
+
+
+.related-images {
+  grid-area: images;
+
+  background-color: #2db878;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+}
+
+
+
+.related-posts {
+  grid-area: posts;
+
+  background-color: #edb6d0;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+
+
+.footer {
+  grid-area: footer;
+
+  background-color: #ffa000;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+}
